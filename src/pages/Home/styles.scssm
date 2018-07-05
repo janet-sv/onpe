@@ -1,0 +1,111 @@
+@import "~sass/utils/index";
+
+.page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $secondary;
+  overflow-y: auto;
+}
+
+.content {
+  margin: auto;
+  margin-top: 80px;
+  padding: 20px;
+  max-width: 1024px;
+
+  @include desktop {
+    padding: 30px;
+  }
+}
+
+.subtitle {
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  font-size: 25px;
+  margin: 15px 0 40px 0;
+  position: relative;
+
+  &:after {
+    content: '';
+    height: 2px;
+    width: 100px;
+    background: $white;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include bigmobile {
+    justify-content: space-around;
+  }
+
+  @include desktop {
+    justify-content: space-between;
+  }
+}
+
+.card {
+  background: $white;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 20px;
+
+  @include bigmobile {
+    width: 170px;
+    height: 170px;
+  }
+
+  @include tablet {
+    width: 160px;
+    height: 160px;
+  }
+
+  @include desktop {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.card-content {
+  width: 100%;
+
+  @include bigmobile {
+    width: 80%;
+  }
+}
+
+.number {
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: $primary;
+
+  @include desktop {
+    font-size: 35px;
+  }
+}
+
+.label {
+  line-height: 16px;
+  font-size: 16px;
+  color: $black;
+
+  @include desktop {
+    line-height: 22px;
+    font-size: 22px;
+  }
+}

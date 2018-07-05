@@ -16,15 +16,16 @@ $white:        hsl(0, 0%, 100%) !default;
 
 $orange:       hsl(14,  100%, 53%) !default;
 $yellow:       hsl(48,  100%, 67%) !default;
-$green:        hsl(141, 71%,  48%) !default;
+$green:        #35b729 !default;
 $turquoise:    hsl(171, 100%, 41%) !default;
-$blue:         hsl(217, 71%,  53%) !default;
+$blue:         #20406c !default;
 $purple:       hsl(271, 100%, 71%) !default;
 $red:          hsl(348, 100%, 61%) !default;
 
 /* Brand */
 
-$primary: $turquoise !default;
+$primary: $blue !default;
+$secondary: #29b7a3 !default;
 
 $info: $blue !default;
 $success: $green !default;
@@ -37,7 +38,8 @@ $dark: $grey-darker !default
 
 /* Responsiveness */
 
-$tablet: 769px !default
+$bigmobile: 425px !default
+$tablet: 768px !default
 $desktop: 1000px !default
 $widescreen: 1192px !default
 $fullhd: 1384px !default
@@ -52,6 +54,6 @@ $lh-default: 1.2 !default;
 
 $body-background-color: $white;
 $body-color: $dark;
-$body-font: BlinkMacSystemFont, "Roboto", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$body-font: "Poppins", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $body-font-size: 16px !default;
 $body-line-height: $lh-default !default;

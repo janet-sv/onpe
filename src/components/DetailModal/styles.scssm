@@ -1,0 +1,57 @@
+@import "~sass/utils/index";
+
+.content {
+  background: $white;
+  position: relative;
+  max-width: 400px;
+  width: 90%;
+  margin: auto;
+  padding: 30px;
+}
+
+.close {
+  display: inline-block;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  vertical-align: middle;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
+  color: $secondary;
+  margin-bottom: 10px;
+}
+
+.status {
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+
+  &.has-code-1 {
+    background: $green;
+    color: $white;
+  }
+
+  &.has-code-2 {
+    background: $red;
+    color: $white;
+  }
+
+  &.has-code-3 {
+    background: $yellow;
+  }
+}
+
+.description {
+  text-align: justify;
+  font-size: 14px;
+  margin-bottom: 15px;
+}

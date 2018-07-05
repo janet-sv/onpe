@@ -1,0 +1,89 @@
+@import "~sass/utils/index";
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: $white;
+  z-index: 1;
+}
+
+.wrapper {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.logo-wrapper {
+  height: 50px;
+
+  &.has-name {
+    margin-left: 15px;
+  }
+}
+
+.toggle-button {
+  cursor: pointer;
+  height: 30px;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: $white;
+  z-index: 2;
+
+  &.is-desktop {
+    display: none;
+
+    @include desktop {
+      display: block;
+      position: relative;
+      display: flex;
+      width: auto;
+    }
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.menu-item {
+  padding: 20px 15px;
+  text-align: center;
+  color: $primary;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+
+  &.align-right {
+    text-align: right;
+  }
+
+  .toggle-button {
+    height: 25px;
+  }
+
+  @include desktop {
+    font-weight: 500;
+    padding: 20px 35px;
+  }
+}
+
+.link  {
+  text-decoration: none;
+}
